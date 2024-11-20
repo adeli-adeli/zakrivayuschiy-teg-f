@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content=" light dark " />
+    <link rel="icon" href="./images/favicon.svg" type="image/svg+xml" />
     <title>Закрывающий тег</title>
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -14,6 +16,11 @@
   </head>
   <body class="page">
     <header class="header">
+      <div class="header__group">
+        <h1 class="header__title">&lt;/HTML&gt;</h1>
+        <p class="header__text">закрывающий тег</p>
+      </div>
+
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +47,46 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <ul class="card">
+        <li class="card__item">
+          <div class="card__content">
+            <h2 class="card__title">
+              Фритрек и нулевой спринт: Подготовка к работе
+            </h2>
+
+            <div class="card__images-wrapper">
+              <img
+                class="card__image"
+                src="./images/car.svg"
+                alt="Машина"
+                srcset=""
+              />
+            </div>
+
+            <div class="card__text-wrapper">
+              <p class="card__text">Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу. И, возможно, подумать, как новые знания могут повлиять на ваше будущее.</p>
+              <p class="card__text">Место для ваших воспоминаний о начале обучения.</p>
+            </div>
+
+            <div class="card__button-wrapper">
+              <button class="card__icon-button">
+                <img
+                  class="like-icon"
+                  src="./svg/heart.svg"
+                  alt="Анимированное сердце"
+                  srcset=""
+                />
+              </button>
+              <button class="card__like-button">
+                <span class="button__text">Like</span>
+              </button>
+            </div>
+          </div>
+        </li>
+      
+      </ul>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
