@@ -18,14 +18,14 @@
     <header class="header">
       <div class="header__group">
         <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <p class="header__text">закрывающий тег</p>
+        <p class="header__subtitle">закрывающий тег</p>
       </div>
 
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button type="button" data-theme="dark" class="theme-menu__button content__button">
               Темно
             </button>
           </li>
@@ -34,13 +34,13 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="theme-menu__button content__button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button type="button" data-theme="light" class="theme-menu__button content__button">
               Светло
             </button>
           </li>
@@ -56,10 +56,11 @@
             </h2>
 
             <div class="card__images-wrapper">
+              <span class="card__images-text content__text-stroke">&lt;/HTML&gt;</span>
               <img
                 class="card__image"
-                src="./images/car.svg"
-                alt="Машина"
+                src="./images/car.png"
+                alt="Фургончик с едой в лесу"
                 srcset=""
               />
             </div>
@@ -70,15 +71,16 @@
             </div>
 
             <div class="card__button-wrapper">
-              <button class="card__icon-button">
+              <button class="card__icon-button content__button">
                 <img
                   class="like-icon"
                   src="./svg/heart.svg"
                   alt="Анимированное сердце"
                   srcset=""
+                  
                 />
               </button>
-              <button class="card__like-button">
+              <button class="card__like-button content__button anima">
                 <span class="button__text">Like</span>
               </button>
             </div>

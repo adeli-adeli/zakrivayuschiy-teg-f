@@ -8,16 +8,26 @@
 :root.theme-light {
   --bg-color: #fff;
   --border: #000;
-  --bg-gradient: linear-gradient(#e7e7e7, #1a1a1a);
+  --bg-gradient: repeating-linear-gradient(to right, #d3d3d3, transparent 2px),
+    repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px),
+    linear-gradient(#e7e7e7, #1a1a1a);
   --text-color: #000;
+  --button-text-color: #fff;
+  --header-font: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-subtile-font: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   /* --display-block: block; */
 }
 
 :root.theme-dark {
   --bg-color: #000;
   --border: #00cc14;
-  --bg-gradient: linear-gradient(#007f0c, #004306);
+  --bg-gradient: repeating-linear-gradient(to right, #000, transparent 2px),
+    repeating-linear-gradient(to bottom, #000, transparent 2px),
+    linear-gradient(#007f0c, #004306);
+  --button-text-color: #00cc14;
   --text-color: #00cc14;
+  --header-font: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  --header-subtile-font: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   /* --display-block: block; */
 }
 
@@ -29,11 +39,16 @@
   :root {
     --bg-color: #000;
     --border: #00cc14;
-    --bg-gradient: linear-gradient(#007f0c, #004306);
+    --bg-gradient: repeating-linear-gradient(to right, #000, transparent 2px),
+      repeating-linear-gradient(to bottom, #000, transparent 2px),
+      linear-gradient(#007f0c, #004306);
     --text-color: #00cc14;
+    --button-text-color: #00cc14;
+    --header-font: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+    --header-subtile-font: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   }
 
   .page {
-    background-image:  var(--bg-gradient);
+    background-image: var(--bg-gradient);
   }
 }
