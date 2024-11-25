@@ -22,3 +22,88 @@
     transform: translateX(4px);
   }
 }
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.sparks {
+  opacity: 0;
+}
+
+/* .sparks:hover {
+  fill: var(--sparks-filling);
+  transition: fill 0.3s linear;
+  opacity: 0.9;
+} */
+
+.like-icon:hover {
+  .core {
+    fill: var(--hover-filling);
+    transition: fill 0.3s linear;
+  }
+
+  .main-body {
+    fill: var(--hover-filling);
+    transition: fill 0.3s 0.05s linear;
+  }
+}
+
+.like-icon:active {
+  .core {
+    fill: var(--active-filling);
+    transition: fill 0.3s linear;
+  }
+
+  .main-body {
+    fill: var(--active-filling);
+    transition: fill 0.3s 0.05s linear;
+  }
+
+ 
+}
+
+.like-icon.is-liked {
+  .heart {
+    transform-origin: center;
+    fill: var(--active-filling);
+    animation: scale  0.3s 0.1s ease-in alternate;
+  }
+
+  .core {
+    fill: var(--active-filling);
+    transition: fill 0.3s linear;
+  }
+
+  .main-body {
+    fill: var(--active-filling);
+    transition: fill 0.3s 0.05s linear;
+  }
+  
+
+  .sparks {
+    fill: var(--sparks-filling);
+    animation: sparks  0.3s 0.3s ease-in alternate;
+  }
+  
+  .contour {
+    fill: var(--active-filling);
+    transition: fill 0.3s 0.06s linear;
+  }
+}
