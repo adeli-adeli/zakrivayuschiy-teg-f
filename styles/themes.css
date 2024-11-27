@@ -6,6 +6,8 @@
 */
 
 :root.theme-light {
+  --basic-text-card: 400;
+  --title-card: 700;
   --bg-color: #fff;
   --border: #000;
   --bg-gradient: repeating-linear-gradient(to right, #d3d3d3, transparent 2px),
@@ -22,6 +24,8 @@
 }
 
 :root.theme-dark {
+  --basic-text-card: 465;
+  --title-card: 785;
   --bg-color: #000;
   --border: #00cc14;
   --bg-gradient: repeating-linear-gradient(to right, #000, transparent 2px),
@@ -43,6 +47,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --basic-text-card: 465;
+    --title-card: 785;
     --bg-color: #000;
     --border: #00cc14;
     --bg-gradient: repeating-linear-gradient(to right, #000, transparent 2px),

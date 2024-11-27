@@ -47,11 +47,7 @@
   opacity: 0;
 }
 
-/* .sparks:hover {
-  fill: var(--sparks-filling);
-  transition: fill 0.3s linear;
-  opacity: 0.9;
-} */
+
 
 .like-icon:hover {
   .core {
