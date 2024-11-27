@@ -322,9 +322,11 @@ body {
 }
 
 .dialog {
+  background-color: var(--bg-color);
   max-width: 353px;
   padding: 30px;
   border: 1px solid var(--border);
+  color: var(--text-color);
 }
 
 .dialog__wrapper {
