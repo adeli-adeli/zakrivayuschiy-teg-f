@@ -8,7 +8,7 @@
   --border: #000;
   --bg-gradient: repeating-linear-gradient(to right, #d3d3d3, transparent 2px),
     repeating-linear-gradient(to bottom, #d3d3d3, transparent 2px),
-    linear-gradient(#e7e7e7, #1a1a1a);
+    repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --bg-color: #fff;
   --text-color: #000;
   --button-text-color: #fff;
