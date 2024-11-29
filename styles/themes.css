@@ -12,10 +12,10 @@
   --border: #000;
   --bg-gradient: repeating-linear-gradient(
       to right,
-      #d3d3d3 2px,
-      transparent 4px
+      #d3d3d3 0px 2px,
+      transparent 2px 4px
     ),
-    repeating-linear-gradient(to bottom, #d3d3d3 2px, transparent 4px),
+    repeating-linear-gradient(to bottom, #d3d3d3 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
   --text-color: #000;
   --button-text-color: #fff;
@@ -32,8 +32,12 @@
   --title-card: 785;
   --bg-color: #000;
   --border: #00cc14;
-  --bg-gradient: repeating-linear-gradient(to right, #000 2px, transparent 4px),
-    repeating-linear-gradient(to bottom, #000 2px, transparent 4px),
+  --bg-gradient: repeating-linear-gradient(
+      to right,
+      #000 0px 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
     repeating-linear-gradient(to bottom, #007f0c, #004306);
   --button-text-color: #00cc14;
   --text-color: #00cc14;
@@ -53,10 +57,10 @@
     --border: #00cc14;
     --bg-gradient: repeating-linear-gradient(
         to right,
-        #000 2px,
-        transparent 4px
+        #000 0px 2px,
+        transparent 2px 4px
       ),
-      repeating-linear-gradient(to bottom, #000 2px, transparent 4px),
+      repeating-linear-gradient(to bottom, #000 0px 2px, transparent 2px 4px),
       repeating-linear-gradient(to bottom, #007f0c, #004306);
     --text-color: #00cc14;
     --button-text-color: #00cc14;
